@@ -134,7 +134,7 @@
     <ClInclude Include="Dobles.h" />
     <ClInclude Include="Enteros.h" />
     <ClInclude Include="MiClase.h" />
-    <ClInclude Include="miClases.h" />
+    <ClInclude Include="MiClases.h" />
     <ClInclude Include="Pila.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

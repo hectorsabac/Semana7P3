@@ -35,7 +35,7 @@
     <ClInclude Include="MiClase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="miClases.h">
+    <ClInclude Include="MiClases.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
