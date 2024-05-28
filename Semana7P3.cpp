@@ -35,7 +35,7 @@ void ejercicio2() {
     cadenas();
     miClases();
 }
-int main() {
+void ejercicio3() {
     int i = 65;
     char c = 70;
     float f = 3.1416;
@@ -43,3 +43,35 @@ int main() {
     cout << "c como int = " << static_cast<int>(c) << endl;
     cout << "f como int = " << static_cast<int>(f) << endl;
 }
+//#define SVD1
+#ifdef SVD1
+class B {};
+class D : public B {};
+class X {};
+
+int main() {
+    D* d = new D;
+    B* b = static_cast<B*>(d); // Esto trabaja!
+    X* x = static_cast<B*>(d); // ERROR - No compila
+}
+#endif
+//#define SVD2
+#ifdef SVD2
+class B {};
+class D : public B {};
+#endif
+#define SVD3
+#ifdef SVD3
+class B {
+public:
+    virtual ~B(){};
+};
+class D : public B {};
+
+int main(){
+    B* b = new D;
+    D* d = dynamic_cast<D*>(b); // Compila!
+}
+#endif
+
+SVD3
