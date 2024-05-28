@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Pila.cpp" />
     <ClCompile Include="Semana7P3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cadenas.h" />
+    <ClInclude Include="Dobles.h" />
+    <ClInclude Include="Enteros.h" />
+    <ClInclude Include="MiClase.h" />
+    <ClInclude Include="miClases.h" />
     <ClInclude Include="Pila.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

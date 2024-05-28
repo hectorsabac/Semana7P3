@@ -1,13 +1,12 @@
-#pragma once
 #include "Pila.h"
 #include <iostream>
 #include <string>
 using namespace std;
-void Cadenas() {
+void cadenas() {
 	Pila<string> stringPila;
-	const size_t stringPilaTam = 10;
+	const int stringPilaTam = 10;
 	cout << "\n--> Insertar elementos en stringPila\n";
-	for (size_t i = 0; i < stringPilaTam; ++i) {
+	for (int i = 0; i < stringPilaTam; ++i) {
 		string stringTemp = "C++" + to_string(i);
 		stringPila.insertar(stringTemp);  cout << stringTemp << ' ';
 	}

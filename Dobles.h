@@ -1,14 +1,16 @@
-#pragma once
 #include "Pila.h"
 #include <iostream>
-using namespace std;
-void Dobles() {
+void dobles() {
 	Pila< double > doblePila;
-	const size_t doblePilaTam = 5;
+	const int doblePilaTam = 5;
 	double dobleValor = 1.1;
-	cout << "\n--> Insertar elemento den doblePila\n";
-	for (size_t i = 0; i < doblePilaTam; ++i) {
+	cout << "\n--> Insertar elementos en doblePila\n";
+	for (int i = 0; i < doblePilaTam; ++i) {
 		doblePila.insertar(dobleValor);
-		cout << dobleValor << ' '; doblePila.extraer();
+		cout << dobleValor << ' '; dobleValor += 1.1;
+	}
+	cout << "\n<-- Extraer elementos de doblePila\n";
+	while (!doblePila.estaVacia()) {
+		cout << doblePila.arriba() << ' '; doblePila.extraer();
 	}
 }

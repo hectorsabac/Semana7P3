@@ -18,12 +18,24 @@
     <ClCompile Include="Semana7P3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pila.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pila.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dobles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enteros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cadenas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiClase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="miClases.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

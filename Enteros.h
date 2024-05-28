@@ -1,13 +1,11 @@
-#pragma once
-#include "pila.h"
+#include "Pila.h"
 #include <iostream>
-using namespace std;
-void Enteros() {
+void enteros() {
 	Pila< int > intPila;
-	const size_t intPilaTam = 10;
+	const int intPilaTam = 10;
 	int intValor = 1;
 	cout << "\n--> Insertar elementos en intPila\n";
-	for (size_t i = 0; i < intPilaTam; ++i) {
+	for (int i = 0; i < intPilaTam; ++i) {
 		intPila.insertar(intValor);
 		cout << intValor++ << ' ';
 	}
