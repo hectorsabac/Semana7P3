@@ -138,12 +138,44 @@ ostream& operator<<(ostream& o, const NT& n) {
 }
 
 istream& operator>>(istream& i, NT& n) {
-    i.ignore(); i >> setw(3) >> n.a; i.ignore(2);
-    i >> setw(4) >> n.i; i.ignore(); i >> setw(4) >> n.l; return i;
+    i.ignore(); //Ignora el inicio de parentesis
+    i >> setw(3) >> n.a;
+    i.ignore(2); // Ignora el cierre de parentesis y el espacio
+    i >> setw(4) >> n.i; 
+    i.ignore(); // Ignora el guion
+    i >> setw(4) >> n.l; return i;
 }
 
-int main() {
-    NT t; cout << "Telefono en la forma (504) 3193-9169" << endl;
+void ejercicio5() {
+    NT t;
+    cout << "Telefono en la forma (504) 3193-9169:" << endl;
     cin >> t; cout << "Telefono: " << t << endl;
-    return 0;
+}
+
+class Fecha {
+public:
+    Fecha(int mes = 1, int dia = 1, int year = 1900) {
+        this->mes = mes;
+        this->dia = dia;
+        this->year = year;
+    }
+    Fecha& operator++(int) {
+        dia++;
+        return *this;
+    }
+    Fecha operator--() {
+        dia--;
+        return *this;
+    }
+private:
+    unsigned int dia, mes, year;
+    friend int main();
+};
+
+int main() {
+    Fecha fecha;
+    fecha++;
+    cout << fecha.dia << endl;
+    --fecha;
+    cout << fecha.dia << endl;
 }
